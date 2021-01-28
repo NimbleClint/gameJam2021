@@ -5,9 +5,9 @@ The player must find all the lost cats hiding in the trees within the time limit
 
 ## Logic Components
 Player  
-*Movement  
-  *Gravity  
-   *Input  
+* Movement  
+  * Gravity  
+   * Input  
             Move left/right  
             Jump  
   
