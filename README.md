@@ -7,9 +7,9 @@ The player must find all the lost cats hiding in the trees within the time limit
 Player  
 > Movement  
 >> Gravity  
-   * Input  
-            Move left/right  
-            Jump  
+>>> Input  
+>>>> Move left/right  
+>>>> Jump  
   
 Collectables  
     Cats  
