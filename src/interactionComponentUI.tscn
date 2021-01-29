@@ -2,13 +2,16 @@
 
 [ext_resource path="res://src/InteractionComponentUI.gd" type="Script" id=1]
 
-[node name="Control" type="Control"]
+[node name="InteractionComponentUI" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+interaction_texture_nodepath = NodePath("HBoxContainer/TextureRect")
+interaction_text_nodepath = NodePath("HBoxContainer/TextureRect")
+interaction_default_text = "Shake"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_right = 40.0

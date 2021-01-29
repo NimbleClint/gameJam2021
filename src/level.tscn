@@ -37,12 +37,6 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 [node name="main" type="Node2D"]
 script = ExtResource( 5 )
 
-[node name="player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 120, 496 )
-
-[node name="cat" parent="player" instance=ExtResource( 7 )]
-position = Vector2( 304, -136 )
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 collision_layer = 8
@@ -52,11 +46,9 @@ tile_data = PoolIntArray( 0, 0, 0, 15, 0, 0, 65536, 0, 0, 65551, 0, 0, 131072, 0
 
 [node name="tree" parent="." instance=ExtResource( 3 )]
 position = Vector2( 544, 512 )
-collision_layer = 4
 
 [node name="tree2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 768, 512 )
-collision_layer = 4
 
 [node name="cat" parent="." instance=ExtResource( 4 )]
 position = Vector2( 904, 464 )
@@ -79,6 +71,12 @@ __meta__ = {
 
 [node name="dog" parent="." instance=ExtResource( 6 )]
 position = Vector2( 904, 392 )
-[connection signal="rigidcat_collected" from="player/cat" to="." method="_on_cat_rigidcat_collected"]
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 120, 496 )
+
+[node name="cat" parent="player" instance=ExtResource( 7 )]
+position = Vector2( 304, -136 )
 [connection signal="cat_collected" from="cat" to="." method="_on_cat_cat_collected"]
 [connection signal="dog_collected" from="dog" to="." method="_on_dog_dog_collected"]
+[connection signal="rigidcat_collected" from="player/cat" to="." method="_on_cat_rigidcat_collected"]
