@@ -30,13 +30,13 @@ The player must find all the lost cats hiding in the trees within the time limit
   
 > Interactables  
 >> ~~Trees~~  
->> On interact:  
->>> Spawn either cat or dogs  
+>> ~~On interact:~~  
+>>> ~~Spawn either cat or dogs~~  
 
 > Game 
 >> ~~Score display~~  
 >> Start Screen
->> Timer  
+>> ~~Timer~~  
 >> Upon timer end:  
 >>> Display Final score  
 
