@@ -1,5 +1,5 @@
 # Game Jam 2021 Document
-~[WIP Screenshot 1](screenshots/wipScreenshot01.png)
+![WIP Screenshot 1](screenshots/wipScreenshot01.png)
 
 
 ## Basic Concept
