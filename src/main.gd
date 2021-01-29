@@ -34,3 +34,6 @@ func _on_dog_dog_collected() -> void:
 
 func _on_cat_rigidcat_collected() -> void:
 	addPoint()
+
+func _on_cat_rigiddog_collected() -> void:
+	losePoints()

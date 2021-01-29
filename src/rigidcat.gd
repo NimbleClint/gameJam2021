@@ -2,6 +2,9 @@ extends RigidBody2D
 
 signal rigidcat_collected
 
+func _ready():
+	apply_impulse(Vector2(), Vector2.UP)
+
 func _on_rigidcat_body_entered(body: Node) -> void:
 	print("Hit rigid cat")
 	if body.is_in_group("player"):

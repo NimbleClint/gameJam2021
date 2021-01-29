@@ -11,6 +11,9 @@ collision_layer = 4
 collision_mask = 0
 script = ExtResource( 2 )
 
+[node name="spawnLoc" type="Node2D" parent="."]
+position = Vector2( 0, -83 )
+
 [node name="tree" type="Sprite" parent="."]
 position = Vector2( 0, -64 )
 texture = ExtResource( 1 )
