@@ -18,7 +18,7 @@ The player must find all the lost cats hiding in the trees within the time limit
 >>>> ~~Move left/right~~  
 >>>> Jump  
   
-> Collectables  
+> ~~Collectables~~  
 >> ~~Cats~~  
 >> ~~Increase points by one~~  
 >> ~~Dogs~~  
@@ -28,7 +28,7 @@ The player must find all the lost cats hiding in the trees within the time limit
 >> Level Design  
 >> ~~Collisions~~  
   
-> Interactables  
+> ~~Interactables~~  
 >> ~~Trees~~  
 >> ~~On interact:~~  
 >>> ~~Spawn either cat or dogs~~  
