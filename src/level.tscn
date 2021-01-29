@@ -48,7 +48,6 @@ spawnDog = false
 
 [node name="tree2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 768, 512 )
-spawnDog = false
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
