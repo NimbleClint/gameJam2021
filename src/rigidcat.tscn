@@ -7,9 +7,10 @@
 radius = 16.0
 
 [node name="rigidcat" type="RigidBody2D"]
+position = Vector2( 0, -101 )
 collision_layer = 2
 collision_mask = 9
-gravity_scale = 3.0
+gravity_scale = 10.0
 contacts_reported = 3
 contact_monitor = true
 script = ExtResource( 2 )

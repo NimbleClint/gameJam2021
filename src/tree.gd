@@ -3,6 +3,7 @@
 extends StaticBody2D
 
 var shook := false
+export var shakes := 3
 var spawnPosition
 export var spawnDog := true
 signal shake_tree
@@ -19,17 +20,26 @@ func interaction_get_text() -> String:
 
 func interaction_interact(interactionComponentParent : Node) -> void:
 	if shook:
+		print("no can shake")
 		return
-	shook = true
+	if(shakes > 0):
+		shakes = shakes - 1
+		print("Remaining shakes: "+String(shakes))
+	if (shakes == 0):
+		shook = true
+		print("No more remaining shakes")
+		# Remove from interaction layer
+		collision_layer = collision_layer ^ 4
 	var scene
 	if(spawnDog):
 		scene = load("res://src/rigiddog.tscn")
 	else:
 		scene = load("res://src/rigidcat.tscn")
 	var spawn = scene.instance()
-	#spawn.set_pos(spawnPosition)
 	add_child(spawn)
+	emit_signal("shake_tree")
 	print("shook a tree")
 
-	# Remove from interaction layer
-	collision_layer = collision_layer ^ 4
+
+func _on_tree_shake_tree() -> void:
+	pass # Replace with function body.

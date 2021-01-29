@@ -2,10 +2,16 @@ extends Node2D
 
 var score
 
-onready var scorelabel = get_node("CanvasLayer/RichTextLabel")
+onready var scorelabel = get_node("CanvasLayer/scoreLabel")
+onready var timelabel = get_node("CanvasLayer/timeLabel")
+onready var timer = get_node("Timer")
+var displayTime = 60
 
 func _ready():
 	score = 0
+	timer.set_wait_time(1)
+	timer.start()
+
 
 # Function to add one point, called when player collects cat
 func addPoint() -> void:
@@ -25,15 +31,18 @@ func losePoints() -> void:
 	scorelabel.clear()
 	scorelabel.add_text(scoretext)
 
+
 # Functions for collecting points
-func _on_cat_cat_collected() -> void:
+func _on_rigidcat_rigidcat_collected() -> void:
 	addPoint()
 
-func _on_dog_dog_collected() -> void:
+func _on_rigiddog_rigiddog_collected() -> void:
 	losePoints()
 
-func _on_cat_rigidcat_collected() -> void:
-	addPoint()
 
-func _on_cat_rigiddog_collected() -> void:
-	losePoints()
+func _on_Timer_timeout() -> void:
+	displayTime -= 1
+	var timeText = "Time: "+String(displayTime)
+	print(String(timeText))
+	timelabel.clear()
+	timelabel.add_text(timeText)

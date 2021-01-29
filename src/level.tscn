@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/floor.png" type="Texture" id=2]
 [ext_resource path="res://src/tree.tscn" type="PackedScene" id=3]
-[ext_resource path="res://src/rigiddog.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/main.gd" type="Script" id=5]
 [ext_resource path="res://src/rigidcat.tscn" type="PackedScene" id=7]
 
@@ -49,29 +48,43 @@ spawnDog = false
 
 [node name="tree2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 768, 512 )
+spawnDog = false
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
+[node name="scoreLabel" type="RichTextLabel" parent="CanvasLayer"]
 anchor_left = 0.086
 anchor_top = 0.042
 anchor_right = 0.211
 anchor_bottom = 0.083
 margin_left = -8.064
 margin_top = -8.192
-margin_right = 7.93599
-margin_bottom = 8.192
-text = "Score: Some Number"
+margin_right = 7.936
+margin_bottom = -15.808
+text = "Score: 0"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="rigidcat" parent="." instance=ExtResource( 7 )]
-position = Vector2( 336, 312 )
+[node name="timeLabel" type="RichTextLabel" parent="CanvasLayer"]
+anchor_left = 0.086
+anchor_top = 0.042
+anchor_right = 0.211
+anchor_bottom = 0.083
+margin_left = -8.064
+margin_top = 15.808
+margin_right = 7.936
+margin_bottom = 8.192
+text = "Time: 60"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 120, 496 )
 
-[node name="rigiddog" parent="." instance=ExtResource( 4 )]
-position = Vector2( 656, 280 )
-gravity_scale = 3.0
+[node name="Timer" type="Timer" parent="."]
+
+[node name="rigidcat" parent="." instance=ExtResource( 7 )]
+position = Vector2( 360, 131 )
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
