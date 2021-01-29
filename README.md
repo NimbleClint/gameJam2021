@@ -20,25 +20,25 @@ The player must find all the lost cats hiding in the trees within the time limit
   
 > Collectables  
 >> ~~Cats~~  
->>> ~~Increase points by one~~  
+>> ~~Increase points by one~~  
 >> Dogs  
->>> Decrese points by three  
+>> Decrese points by three  
         
 > Environment  
 >> Level Design  
->>> Collisions  
+>> Collisions  
   
 > Interactables  
 >> ~~Trees~~  
->>> On interact:  
->>>> Spawn either cat or dogs  
+>> On interact:  
+>>> Spawn either cat or dogs  
 
 > Game 
 >> ~~Score display~~  
 >> Start Screen
 >> Timer  
->>> Upon timer end:  
->>>> Display Final score  
+>> Upon timer end:  
+>>> Display Final score  
 
 ### Assets
 * Player
