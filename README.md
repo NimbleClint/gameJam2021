@@ -27,6 +27,7 @@ The player must find all the lost cats hiding in the trees within the time limit
 > Environment  
 >> Level Design  
 >> ~~Collisions~~  
+>> Canvas follows camera  
   
 > ~~Interactables~~  
 >> ~~Trees~~  
