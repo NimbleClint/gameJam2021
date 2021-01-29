@@ -35,7 +35,7 @@ The player must find all the lost cats hiding in the trees within the time limit
 
 > Game 
 >> ~~Score display~~  
->> Start Screen
+>> Start Screen  
 >> ~~Timer~~  
 >> Upon timer end:  
 >>> Display Final score  
