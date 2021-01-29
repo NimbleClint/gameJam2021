@@ -21,8 +21,8 @@ The player must find all the lost cats hiding in the trees within the time limit
 > Collectables  
 >> ~~Cats~~  
 >> ~~Increase points by one~~  
->> Dogs  
->> Decrese points by three  
+>> ~~Dogs~~  
+>> ~~Decrese points by three~~  
         
 > Environment  
 >> Level Design  
