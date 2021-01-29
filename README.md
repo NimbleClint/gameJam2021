@@ -26,7 +26,7 @@ The player must find all the lost cats hiding in the trees within the time limit
         
 > Environment  
 >> Level Design  
->> Collisions  
+>> ~~Collisions~~  
   
 > Interactables  
 >> ~~Trees~~  
@@ -48,6 +48,8 @@ The player must find all the lost cats hiding in the trees within the time limit
 * Ground Tiles
 * Wall Tile
 * Background
+* Start UI
+* End UI
 
 ### Sound
 * Cat sound
