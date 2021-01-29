@@ -12,15 +12,15 @@ The player must find all the lost cats hiding in the trees within the time limit
 
 ### Logic Components
 > Player  
-~~>> Movement  
->>> Gravity  
->>> Input  
->>>> Move left/right~~  
+>> ~~Movement~~  
+>>> ~~Gravity~~  
+>>> ~~Input~~  
+>>>> ~~Move left/right~~  
 >>>> Jump  
   
 > Collectables  
-~~>> Cats  
->>> Increase points by one~~  
+>> ~~Cats~~  
+>>> ~~Increase points by one~~  
 >> Dogs  
 >>> Decrese points by three  
         
@@ -29,12 +29,12 @@ The player must find all the lost cats hiding in the trees within the time limit
 >>> Collisions  
   
 > Interactables  
-~~>> Trees~~  
+>> ~~Trees~~  
 >>> On interact:  
 >>>> Spawn either cat or dogs  
 
 > Game 
-~~>> Score display~~  
+>> ~~Score display~~  
 >> Start Screen
 >> Timer  
 >>> Upon timer end:  
