@@ -1,7 +1,10 @@
 extends Node2D
 
-var score
+# You were here at 20:58
+# https://www.youtube.com/watch?v=aPN7k7irDnY&t=125s
+const GameOverScreen = preload("res://src/gameOverScreen.tscn")
 
+var score
 onready var scorelabel = get_node("CanvasLayer/scoreLabel")
 onready var timelabel = get_node("CanvasLayer/timeLabel")
 onready var timer = get_node("Timer")
@@ -39,10 +42,19 @@ func _on_rigidcat_rigidcat_collected() -> void:
 func _on_rigiddog_rigiddog_collected() -> void:
 	losePoints()
 
-
+# Countdown and display timer
 func _on_Timer_timeout() -> void:
+	if(displayTime == 0):
+		show_game_over_screen(score)
+		return
 	displayTime -= 1
 	var timeText = "Time: "+String(displayTime)
-	print(String(timeText))
 	timelabel.clear()
 	timelabel.add_text(timeText)
+	
+
+func show_game_over_screen(s):
+	var game_over = GameOverScreen.instance()
+	add_child(game_over)
+	game_over.update_score(s)
+	get_tree().paused = true
