@@ -29,19 +29,19 @@ The player must find all the lost cats hiding in the trees within the time limit
 > Environment  
 >> Level Design  
 >> ~~Collisions~~  
->> Canvas follows camera  
+>> ~~Canvas follows camera~~  
   
 > ~~Interactables~~  
 >> ~~Trees~~  
 >> ~~On interact:~~  
 >>> ~~Spawn either cat or dogs~~  
 
-> Game 
+> ~~Game~~ 
 >> ~~Score display~~  
->> Start Screen  
+>> ~~Start Screen~~  
 >> ~~Timer~~  
->> Upon timer end:  
->>> Display Final score  
+>> ~~Upon timer end:~~  
+>>> ~~Display Final score~~  
 
 ### Assets
 * Player
