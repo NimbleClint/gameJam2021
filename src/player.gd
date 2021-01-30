@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 class_name Player
 
-export (int) var speed = 50
+export (int) var speed = 75
 export (int) var max_speed = 200
 export (int) var jump_height = -800
 export (int) var gravity = 20
@@ -12,8 +12,6 @@ export (float) var airFriction = 0.05
 var velocity = Vector2()
 
 func _physics_process(delta):
-#	get_input()
-	
 	var isFriction = false
 	
 	velocity.y += gravity

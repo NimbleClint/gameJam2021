@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://assets/icon.png" type="Texture" id=1]
-[ext_resource path="res://src/player.gd" type="Script" id=2]
+[ext_resource path="res://src/player.gd" type="Script" id=1]
+[ext_resource path="res://assets/icon.png" type="Texture" id=2]
 [ext_resource path="res://src/InteractionComponent.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
@@ -12,11 +12,13 @@ height = 30.0
 "player",
 ]]
 collision_mask = 10
-script = ExtResource( 2 )
+script = ExtResource( 1 )
+speed = 50
+max_speed = 250
 
 [node name="sprite" type="Sprite" parent="."]
 position = Vector2( 0, -33 )
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 
 [node name="InteractionComponent" parent="sprite" instance=ExtResource( 3 )]
 position = Vector2( 0, 33 )

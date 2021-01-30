@@ -8,7 +8,7 @@ var score
 onready var scorelabel = get_node("CanvasLayer/scoreLabel")
 onready var timelabel = get_node("CanvasLayer/timeLabel")
 onready var timer = get_node("Timer")
-var displayTime = 60
+var displayTime = 180
 
 func _ready():
 	score = 0

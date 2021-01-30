@@ -11,7 +11,7 @@ border_color = Color( 0, 0, 0, 1 )
 size = 64
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=3]
 size = 48
 font_data = ExtResource( 1 )
 
@@ -74,7 +74,7 @@ margin_top = 129.0
 margin_right = 896.0
 margin_bottom = 129.0
 rect_clip_content = false
-custom_fonts/normal_font = SubResource( 6 )
+custom_fonts/normal_font = SubResource( 3 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 __meta__ = {

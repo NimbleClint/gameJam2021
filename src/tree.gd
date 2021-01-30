@@ -20,16 +20,14 @@ func interaction_get_text() -> String:
 
 func interaction_interact(interactionComponentParent : Node) -> void:
 	if shook:
-		print("no can shake")
 		return
 	if(shakes > 0):
 		shakes = shakes - 1
-		print("Remaining shakes: "+String(shakes))
 	if (shakes == 0):
 		shook = true
-		print("No more remaining shakes")
 		# Remove from interaction layer
 		collision_layer = collision_layer ^ 4
+		
 	var scene
 	if(spawnDog):
 		scene = load("res://src/rigiddog.tscn")
@@ -37,9 +35,8 @@ func interaction_interact(interactionComponentParent : Node) -> void:
 		scene = load("res://src/rigidcat.tscn")
 	var spawn = scene.instance()
 	add_child(spawn)
+	self.connect("shake_tree", spawn, "_on_tree_shake_tree")
 	emit_signal("shake_tree")
-	print("shook a tree")
-
 
 func _on_tree_shake_tree() -> void:
 	pass # Replace with function body.
