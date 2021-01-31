@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/tree.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32, 56.3907 )
+extents = Vector2( 53, 64 )
 
 [node name="tree" type="StaticBody2D"]
 collision_layer = 4
@@ -15,10 +15,10 @@ script = ExtResource( 1 )
 position = Vector2( 0, -83 )
 
 [node name="tree" type="Sprite" parent="."]
-position = Vector2( 0, -64 )
+position = Vector2( 3, -62 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -56 )
+position = Vector2( 3, -64 )
 shape = SubResource( 1 )
 [connection signal="input_event" from="." to="." method="_on_tree_input_event"]

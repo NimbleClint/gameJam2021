@@ -3,13 +3,14 @@
 extends Area2D
 
 export var interaction_parent : NodePath
+onready var animator = get_node("../../AnimationPlayer")
 
 signal on_interactable_changed(newInteractable)
 
 var interaction_target : Node
 
 # Called every frame
-func _process(delta):
+func _process(_delta):
 	# Check whether the player is trying to interact
 	if (interaction_target != null and Input.is_action_just_pressed("interact")):
 		# If so, we'll call interaction_interact() if our target supports it

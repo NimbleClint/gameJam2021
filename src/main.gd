@@ -8,7 +8,7 @@ var score
 onready var scorelabel = get_node("CanvasLayer/scoreLabel")
 onready var timelabel = get_node("CanvasLayer/timeLabel")
 onready var timer = get_node("Timer")
-var displayTime = 180
+export var time = 180
 
 func _ready():
 	score = 0
@@ -44,11 +44,11 @@ func _on_rigiddog_rigiddog_collected() -> void:
 
 # Countdown and display timer
 func _on_Timer_timeout() -> void:
-	if(displayTime == 0):
+	if(time == 0):
 		show_game_over_screen(score)
 		return
-	displayTime -= 1
-	var timeText = "Time: "+String(displayTime)
+	time -= 1
+	var timeText = "Time: "+String(time)
 	timelabel.clear()
 	timelabel.add_text(timeText)
 	

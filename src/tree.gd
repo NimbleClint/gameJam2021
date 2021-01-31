@@ -18,7 +18,7 @@ func interaction_can_interact(interactionComponentParent : Node) -> bool:
 func interaction_get_text() -> String:
 	return "Shake"
 
-func interaction_interact(interactionComponentParent : Node) -> void:
+func interaction_interact(_interactionComponentParent : Node) -> void:
 	if shook:
 		return
 	if(shakes > 0):

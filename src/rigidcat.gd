@@ -1,6 +1,7 @@
 extends RigidBody2D
 
 signal rigidcat_collected
+var yank = 1
 
 onready var main = self.get_tree().get_current_scene()
 var shootSpeed = 500
@@ -15,4 +16,8 @@ func _on_rigidcat_body_entered(body: Node) -> void:
 
 
 func _on_tree_shake_tree():
-	apply_impulse(Vector2(), Vector2(shootSpeed,0).rotated(randf() * 2.0 * PI))
+	if yank == 0:
+		return
+	else:
+		apply_impulse(Vector2(), Vector2(shootSpeed,0).rotated(randf() * 2.0 * PI))
+		yank -= 1
