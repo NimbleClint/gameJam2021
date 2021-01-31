@@ -1,66 +1,21 @@
-# Game Jam 2021 Document
-![WIP Screenshot 1](screenshots/wipScreenshot01.png)
+# Cat Collector
+A game about shaking cats out of trees.
 
+![Screenshot1](screenshots/catCollector_screenshot1.png)
+![Screenshot2](screenshots/catCollector_screenshot2.png)
 
-## Basic Concept
-The player must find all the lost cats hiding in the trees within the time limit. The player finds cats by approaching trees and shaking them. Each cat is worth one point. However, dogs may also fall from the trees. If the player collects a dog, they lose three points. The game ends after the time limit.
+## About
+Cat Collector was created for Global Game Jam 2021. It was created using Godot 3.2.3.
 
-## To Do
-* ~~Basic logic~~
-* ~~Basic UI (Start/End)~~
-* ~~Level Design~~
-* Assets Beautification
-* Sound
+## License
+Cat Collector is released under a CC BY-NC-SA liscense.
 
-### Logic Components
-> ~~Player~~  
->> ~~Movement~~  
->>> ~~Gravity~~  
->>> ~~Input~~  
->>>> ~~Move left/right~~  
->>>> ~~Jump~~  
-  
-> ~~Collectables~~  
->> ~~Cats~~  
->> ~~Increase points by one~~  
->> ~~Dogs~~  
->> ~~Decrese points by three~~  
-        
-> ~~Environment~~  
->> ~~Level Design~~  
->> ~~Collisions~~  
->> ~~Canvas follows camera~~  
-  
-> ~~Interactables~~  
->> ~~Trees~~  
->> ~~On interact:~~  
->>> ~~Spawn either cat or dogs~~  
+## Installing
+Navigate to [the release page on Github](https://github.com/NimbleClint/gameJam2021/releases) and download the appropriate .zip file for your operating system. Unzip the file and run the executable inside.
 
-> ~~Game~~ 
->> ~~Score display~~  
->> ~~Start Screen~~  
->> ~~Timer~~  
->> ~~Upon timer end:~~  
->>> ~~Display Final score~~  
+## How to play
+Ms. Jenkins lost all her cats. Go get them. Avoid the dogs.
 
-### Assets
-* Player
-* Cat
-* Dog
-* Trees
-* Ground Tiles
-* Wall Tile
-* Background
-* Start UI
-* End UI
-
-### Sound
-* Cat sound
-* Dog sound
-* Tree sound
-* Background music
-* Ending music
-
-    
-## Aesthetics
-Pixel art, minimal, possibly black/white
+A/D or Left/Right arrows: Move left and right
+W or Up arrow: Jump
+S, Down arrow, or space: Shake a tree
