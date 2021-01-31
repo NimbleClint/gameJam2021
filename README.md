@@ -1,8 +1,8 @@
 # Cat Collector
 A game about shaking cats out of trees.
 
-![Screenshot1](screenshots/catCollector_screenshot1.png)
 ![Screenshot2](screenshots/catCollector_screenshot2.png)
+![Screenshot1](screenshots/catCollector_screenshot1.png)
 
 ## About
 Cat Collector was created for Global Game Jam 2021. It was created using Godot 3.2.3.
